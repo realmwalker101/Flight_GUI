@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>1311</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 10px</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="from_btn">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>80</y>
+       <width>301</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::StrongFocus</enum>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::DefaultContextMenu</enum>
+     </property>
+     <property name="acceptDrops">
+      <bool>false</bool>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: solid;
+border-color: #a9a9a9;
+border-width: 1px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="to_btn">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>80</y>
+       <width>301</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: solid;
+border-color: #a9a9a9;
+border-width: 1px;
+border-radius: 0px</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="dep_btn">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>80</y>
+       <width>171</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: solid;
+border-color: #a9a9a9;
+border-width: 1px;
+border-radius: 0px</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ret_btn">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>80</y>
+       <width>171</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: solid;
+border-color: #a9a9a9;
+border-width: 1px;
+border-radius: 0px</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="tra_btn">
+     <property name="geometry">
+      <rect>
+       <x>1000</x>
+       <y>80</y>
+       <width>251</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: solid;
+border-color: #a9a9a9;
+border-width: 1px;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>100</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Berlin Sans FB&quot;;
+color: rgb(75, 75, 75)</string>
+     </property>
+     <property name="text">
+      <string>From</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>100</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Berlin Sans FB&quot;;
+color: rgb(75, 75, 75)</string>
+     </property>
+     <property name="text">
+      <string>To</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>680</x>
+       <y>100</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Berlin Sans FB&quot;;
+color: rgb(75, 75, 75)</string>
+     </property>
+     <property name="text">
+      <string>Depature</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>850</x>
+       <y>100</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Berlin Sans FB&quot;;
+color: rgb(75, 75, 75)</string>
+     </property>
+     <property name="text">
+      <string>Return</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>1020</x>
+       <y>100</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Berlin Sans FB&quot;;
+color: rgb(75, 75, 75)</string>
+     </property>
+     <property name="text">
+      <string>Travellers &amp; Class</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>130</y>
+       <width>91</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 24pt &quot;Berlin Sans FB&quot;;
+</string>
+     </property>
+     <property name="text">
+      <string>Delhi</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>130</y>
+       <width>201</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 24pt &quot;Berlin Sans FB&quot;;
+</string>
+     </property>
+     <property name="text">
+      <string>Bengaluru</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>680</x>
+       <y>130</y>
+       <width>31</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 24pt &quot;Berlin Sans FB&quot;;
+</string>
+     </property>
+     <property name="text">
+      <string>18</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>850</x>
+       <y>130</y>
+       <width>31</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 24pt &quot;Berlin Sans FB&quot;;
+</string>
+     </property>
+     <property name="text">
+      <string>19</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>1020</x>
+       <y>130</y>
+       <width>41</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 24pt &quot;Berlin Sans FB&quot;;
+</string>
+     </property>
+     <property name="text">
+      <string>09</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>150</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Berlin Sans FB&quot;;
+color: rgb(75, 75, 75)</string>
+     </property>
+     <property name="text">
+      <string>Feb'24</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>880</x>
+       <y>150</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Berlin Sans FB&quot;;
+color: rgb(75, 75, 75)</string>
+     </property>
+     <property name="text">
+      <string>Feb'24</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>1060</x>
+       <y>150</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Berlin Sans FB&quot;;
+color: rgb(75, 75, 75)</string>
+     </property>
+     <property name="text">
+      <string>Travellers</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>180</y>
+       <width>261</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Berlin Sans FB&quot;;
+color: rgb(75, 75, 75)</string>
+     </property>
+     <property name="text">
+      <string>DEL, Delhi Airport India</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>180</y>
+       <width>261</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Berlin Sans FB&quot;;
+color: rgb(75, 75, 75)</string>
+     </property>
+     <property name="text">
+      <string>BLR, Bengaluru International Airport India</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>680</x>
+       <y>180</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Berlin Sans FB&quot;;
+color: rgb(75, 75, 75)</string>
+     </property>
+     <property name="text">
+      <string>Sunday</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>850</x>
+       <y>180</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Berlin Sans FB&quot;;
+color: rgb(75, 75, 75)</string>
+     </property>
+     <property name="text">
+      <string>Monday</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_18">
+     <property name="geometry">
+      <rect>
+       <x>1020</x>
+       <y>180</y>
+       <width>211</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Berlin Sans FB&quot;;
+color: rgb(75, 75, 75)</string>
+     </property>
+     <property name="text">
+      <string>Premium Economy</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>40</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Berlin Sans FB&quot;;
+color: rgb(75, 75, 75)</string>
+     </property>
+     <property name="text">
+      <string>One Way</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_2">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>40</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Berlin Sans FB&quot;;
+color: rgb(75, 75, 75)</string>
+     </property>
+     <property name="text">
+      <string>Two Way</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_19">
+     <property name="geometry">
+      <rect>
+       <x>860</x>
+       <y>273</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Berlin Sans FB&quot;;
+color: rgb(75, 75, 75)</string>
+     </property>
+     <property name="text">
+      <string>Trending Searches :</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>1010</x>
+       <y>270</y>
+       <width>121</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: solid;
+background-color: rgb(208, 208, 208);
+border-color: #a9a9a9;
+border-width: 1px;
+border-radius: 10px</string>
+     </property>
+     <property name="text">
+      <string>Mumbai -&gt; Bangkok</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>1140</x>
+       <y>270</y>
+       <width>121</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: solid;
+background-color: rgb(208, 208, 208);
+border-color: #a9a9a9;
+border-width: 1px;
+border-radius: 10px</string>
+     </property>
+     <property name="text">
+      <string>Mumbai -&gt; Goa</string>
+     </property>
+    </widget>
+    <zorder>to_btn</zorder>
+    <zorder>dep_btn</zorder>
+    <zorder>from_btn</zorder>
+    <zorder>label_14</zorder>
+    <zorder>ret_btn</zorder>
+    <zorder>tra_btn</zorder>
+    <zorder>label</zorder>
+    <zorder>label_10</zorder>
+    <zorder>label_12</zorder>
+    <zorder>label_11</zorder>
+    <zorder>label_13</zorder>
+    <zorder>label_15</zorder>
+    <zorder>label_16</zorder>
+    <zorder>label_17</zorder>
+    <zorder>label_18</zorder>
+    <zorder>label_2</zorder>
+    <zorder>label_3</zorder>
+    <zorder>label_4</zorder>
+    <zorder>label_5</zorder>
+    <zorder>label_6</zorder>
+    <zorder>label_7</zorder>
+    <zorder>label_8</zorder>
+    <zorder>label_9</zorder>
+    <zorder>radioButton</zorder>
+    <zorder>radioButton_2</zorder>
+    <zorder>label_19</zorder>
+    <zorder>pushButton</zorder>
+    <zorder>pushButton_2</zorder>
+   </widget>
+   <widget class="QPushButton" name="from_btn_2">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>470</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-style: solid;
+border-color: #a9a9a9;
+border-width: 1px;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+font: 75 24pt &quot;Berlin Sans FB&quot;;
+color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(117, 126, 255, 255), stop:1 rgba(206, 224, 255, 255));
+</string>
+    </property>
+    <property name="text">
+     <string>SEARCH</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="files.qrc"/>
+ </resources>
+ <connections/>
+</ui>
